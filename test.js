@@ -31,5 +31,25 @@ console.log(badstring);
 
 const name = "aman";
 const age = "12";
-const greeting = `Hello , ${name} your age is ${age}`;
+const greeting = `Hello , ${name} your age is ${age}`; //concatenation using '$' sign
 console.log(greeting);
+
+const emotion = "jealousy";
+const subject = "A";
+console.log(subject + " " + emotion); //concatenation using '+' symbol
+
+const song = "Fight the Youth";
+const score = 9;
+const highestScore = 10;
+const output = `I like the song ${song}. I gave it a score of ${
+  (score / highestScore) * 100
+} %.`;
+console.log(output); //don't work for + symbol $ will work
+
+const line = `there was a certain man in certain time ago 
+he was big and strong and his eyes was glowy `; // can also work using '\n'
+console.log(line);
+
+const myNum2 = 123;
+const myString2 = String(myNum2);
+console.log(typeof myString2);
