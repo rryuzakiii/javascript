@@ -53,3 +53,33 @@ console.log(line);
 const myNum2 = 123;
 const myString2 = String(myNum2);
 console.log(typeof myString2);
+
+let text = "Apple , Banana, Kiwi";
+let part = text.slice(7, 13); //slice extracts a part of a string and returns the extracted part in a new string.
+
+let str = "Apple, Banana, Kiwi";
+let parts = str.substring(7, 13); //substring is similar to slice but start and end values less than 0 are treated as 0 in substring().
+
+let text1 = "Hello World!";
+let text2 = text1.toUpperCase(); //returns uppercase (toLowerCase will return lowercase letters)
+
+let text01 = "Hello";
+let text02 = "World";
+let text03 = text01.concat(" ", text02); //will join two string and return
+
+let text001 = "               HEllo World             ";
+let text002 = text001.trim(); //remove white space from both side
+
+//trimStart() only remove white space from the start of string
+//the strings that are returned here are all new strings they are not modified string because all string cannot be changed ,only be modified.
+
+const e = "a";
+const r = "b";
+if (e < r) {
+  // true
+  console.log(`${e} is less than ${r}`);
+} else if (e > r) {
+  console.log(`${e} is greater than ${r}`);
+} else {
+  console.log(`${e} and ${r} are equal.`);
+}
