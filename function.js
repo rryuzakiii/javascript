@@ -22,12 +22,12 @@ const myNumber = Math.random();
 // the random() function generates a random number between
 // 0 and up to but not including 1, and returns that number
 
-function draw() {
-  CSSMatrixComponent.clearReact(0, 0, WIDTH, HEIGHT);
-  for (let i = 0; i < 100; i++) {
-    ctx.beginpath();
-    ctx.fillstyle = "rgb(255 0 0/ 50%)";
-    ctx.arc(random(WIDTH), random(HEIGHT), random(50), 0, 2 * Math.PI);
-    ctx.fill();
-  }
-}
+// function draw() {
+//   ctx.clearReact(0, 0, WIDTH, HEIGHT);
+//   for (let i = 0; i < 100; i++) {
+//     ctx.beginpath();
+//     ctx.fillstyle = "rgb(255 0 0/ 50%)";
+//     ctx.arc(random(WIDTH), random(HEIGHT), random(50), 0, 2 * Math.PI);
+//     ctx.fill();
+//   }
+// }
