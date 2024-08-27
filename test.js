@@ -81,5 +81,8 @@ if (e < r) {
 } else if (e > r) {
   console.log(`${e} is greater than ${r}`);
 } else {
-  console.log(`${e} and ${r} are equal.`);
+  console.log(`${e} and ${r} are equal.`); //all comparison operators,including "==="and "==" compare strings case -sensitivity.to fix this
 }
+function areEqualCaseInsensitive(str1, str2) {
+  return str1.toUpperCase() === str2.toUpperCase(); //convert both them uppercase or lowercase just like this
+} //when there is more language then use "toLocalLowerCase("tr")"
